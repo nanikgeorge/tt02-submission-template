@@ -35,10 +35,10 @@ documentation:
     - A
     - B
   outputs:
-    - square wave out         # a description of what the outputs do
-    - none
-    - none
-    - none
+    - Pitch + 1 Octave         # a description of what the outputs do
+    - Pitch
+    - Pitch - 1 Octave
+    - Pitch - 2 Octave
     - none
     - none
     - none
