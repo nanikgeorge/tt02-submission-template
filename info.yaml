@@ -24,7 +24,7 @@ documentation:
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "Not done yet, I would like to build this into a proper keyboard of somekind. Coming soon!"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     12500       # Clock frequency in Hz (if required)
-  picture:      "Not done yet."      # relative path to a picture in your repository
+  picture:      "2023-10-16_22-48.png"      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
     - clock
     - C
