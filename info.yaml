@@ -18,11 +18,11 @@ documentation:
   discord:      "nanik"      # Your discord handle
   title:        "Tiny Synth"      # Project title
   description:  "A tiny synthesizer! Modulates the frequency of the clock based on inputs, plays a C scale (hopefully)."      # Short description of what your project does
-  how_it_works: "Will come back and write more after my exams!"      # Longer description of how the project works
-  how_to_test:  "Make sure the clock is tied to input 0, whatever frequency you want, play with it! Then you can play different notes by toggling the other inputs."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  "Not entirely sure yet, it outputs a square wave, I still need to figure out what to do with it to make it make sound."      # Describe any external hardware needed
+  how_it_works: "The 6 flipflops are setup as toggle flipflops, storing a value which counts up from zero. The banks of and gates each store a value and compare it to the value stored in the flipflops as they count up. By toggling the input one of the banks of and gates is selected, when the value it is storing is reached by the flipflops, the flipflops are reset. This allows us to set and reset the last flip flop before the output to the frequency of our desired musical note. The additional flip flops on outputs 3 and 4 are there to lower the pitch, each dividing the frequency by two."      # Longer description of how the project works
+  how_to_test:  "Make sure the clock is tied to input 0, then you can play different notes by toggling the other inputs."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
+  external_hw:  "An external speaker and some way to drive it - probably a buffer of some kind on the output."      # Describe any external hardware needed
   language:     "wokwi" # other examples include Verilog, Amaranth, VHDL, etc
-  doc_link:     "Not done yet, eventually!"      # URL to longer form documentation, eg the README.md in your repository
+  doc_link:     "Not done yet, I would like to build this into a proper keyboard of somekind. Coming soon!"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     12500       # Clock frequency in Hz (if required)
   picture:      "Not done yet."      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
@@ -35,10 +35,10 @@ documentation:
     - A
     - B
   outputs:
-    - Pitch + 1 Octave         # a description of what the outputs do
+    - Pitch +1 Octave         # a description of what the outputs do
     - Pitch
-    - Pitch - 1 Octave
-    - Pitch - 2 Octave
+    - Pitch -1 Octave
+    - Pitch -2 Octave
     - none
     - none
     - none
